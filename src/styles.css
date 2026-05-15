@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #e2e6ea;
+    background-image: radial-gradient(circle at top right, #f8f9fa, #ced4da);
+    font-family: 'Inter', sans-serif;
+    color: #212529;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 950px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    border-top: 5px solid #d32f2f; /* Automotive Red Accent */
+}
+
+h2 {
+    font-weight: 800;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60%;
+    height: 4px;
+    background-color: #d32f2f;
+    border-radius: 2px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #212529;
+    border-color: #212529;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+}
+
+.btn-success {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.btn-success:hover {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+}
+
+.btn-warning {
+    background-color: #f57c00;
+    border-color: #f57c00;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #e65100;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(245, 124, 0, 0.3);
+}
+
+.btn-danger {
+    background-color: #111;
+    border-color: #111;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 20px;
+}
+
+.table-bordered {
+    border: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: transparent;
+}
+
+.table-dark {
+    background-color: #212529;
+    --bs-table-bg: #212529;
+}
+
+.table thead th {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+    padding: 18px 15px;
+}
+
+.table thead th:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+.table thead th:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+.table tbody tr {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    transform: scale(1.01) translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+}
+
+.table tbody td {
+    border: none;
+    padding: 16px 15px;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #495057;
+}
+
+.table tbody td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; font-weight: 700; color: #111; }
+.table tbody td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 0.25rem rgba(211, 47, 47, 0.15);
+}
+
+label {
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.w-50 {
+    width: 100% !important;
+    max-width: 500px;
+}
+
+/* Price column specific styling */
+.price-col {
+    color: #d32f2f !important;
+    font-weight: 700 !important;
+}

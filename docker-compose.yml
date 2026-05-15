@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - DB_HOST=db-automotora.ctao2g4e8ysp.us-east-1.rds.amazonaws.com
+      - DB_NAME=automotora
+      - DB_USER=postgres
+      - DB_PASS=admin_123
